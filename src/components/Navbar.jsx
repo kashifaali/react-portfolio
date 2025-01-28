@@ -9,7 +9,7 @@ export default function Navbar() {
       <nav className="navbar">
         {/* Logo Section */}
         
-        <div className="navbar-logo"><a href="#"><span className='L'>L</span>ogo</a>
+        <div className="navbar-logo"><a href="#"><span className='L'>L</span>aSHIF</a>
         </div>
        
 

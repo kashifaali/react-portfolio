@@ -1,264 +1,252 @@
+/* Container */
 .container {
-    background-color: #0B0826;
-    width: 100%;
-    height: 100vh;
+  background-color: #0B0826;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
+/* Particles Background */
 #tsparticles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-     
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Ensures it's behind the content */
+  pointer-events: none; /* Allows interactions with elements above it */
+}
 
+
+/* Home Section */
 .home {
-    width: 100%;
+  width: 100%;
+  z-index: 10;
 }
 
 .home-main {
-    margin-top: 10px;
-    width: 100%;    
-    height: 340px;
-    /* background-color: aqua; */
-    /* Center content with Flexbox */
-    display: flex; /* Enable Flexbox */
-    justify-content:center;
-    align-items: center; /* Center vertically */
+  /* margin-top: 10px; */
+  width: 100%;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
 }
 
 .portfolio {
-    font-size: 150px; /* Default size for large screens */
-    font-weight: bold; /* Make it bold */
-    color: white;
-    font-family:cursive;
-    text-align: center; /* Ensures proper alignment */
-    word-wrap: break-word; /* Prevents overflow */
+  font-size: 150px;
+  font-weight: bold;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  word-wrap: break-word;
 }
-.devimg img{
+
+.devimg img {
   width: 135px;
-
 }
 
+/* Social Media Icons */
 .navbar-icons {
   position: fixed;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 27px 0px 23px 14px;
-
+  top: 40%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .navbar-icons a {
   color: white;
-  padding-right: 5px;
   font-size: 1.5rem;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .navbar-icons a:hover {
-  color: orange; /* Change hover color */
+  color: orange;
   font-size: 1.6rem;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .navbar-icons {
-    right: 10px; /* Adjust position for smaller screens */
-    gap: 15px; /* Reduce spacing between icons */
-  }
-
-  .navbar-icons a {
-    font-size: 1.2rem; /* Adjust icon size for smaller screens */
-  }
+.infinite {
+  width: 99.8%;
+  height: 100px;
+  /* background-color: green; */
+  position: absolute; /* Set position property */
+  top: 350px; /* Adjust top if necessary */
+  left: 0; /* Adjust left if necessary */
+  z-index: 10; /* This will place it behind other elements */
+  transform: rotate(3deg); /* Apply rotation */
 }
 
+
+/* Buttons Container */
+.buttons-container {
+  width: 85%;
+  display: flex;
+  margin: auto;
+  margin-top: 70px;
+  z-index: 10;
+  /* margin-top: 10px; */
+  align-items: center;
+  /* background-color: #1595b6; */
+  height: 143px;
+}
+
+/* Read More Button */
+.read-button{
+  width: 40%;
+
+}
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
+  border-radius: 5px;
+  padding: 0 10px;
+  font-weight: 600;
+  margin-bottom: 97px;
+  margin-left: 40px;
+  color: white;
+  font-size: 20px;
+  height: 45px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: white;
+}
+
+.readarrow img {
+  margin-left: 10px;
+  transform: rotate(224deg);
+  width: 19px;
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+.read-more:hover .readarrow img {
+  transform: rotate(90deg);
+}
+
+/* Project Button */
+
+.project-div{
+  width: 60%;
+}
+.project-button {
+  display: inline-flex;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
+  border-radius: 5px;
+  padding: 0 10px;
+  font-weight: 600;
+  color: white;
+  font-size: 20px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.projectarrow img {
+  margin-left: 10px;
+  transform: rotate(-45deg);
+  width: 19px;
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+.project-button:hover {
+  background: linear-gradient(to right, #1f2667, #1595b6);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-button:hover .projectarrow img {
+  transform: rotate(-45deg) translateY(10px);
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .container {
-        background-color: #0B0826;
-        width: 100%;
-        height: 140vh;
-    }
-    
-    .portfolio {
-        font-size: 140px; /* Adjust size for tablets */
-    }
+  .portfolio {
+    font-size: 140px;
+  }
+}
+
+@media (max-width: 964px) {
+  .portfolio {
+    font-size: 7rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .portfolio {
-        font-size: 100px; /* Adjust size for smaller tablets */
-    }
-}
+  .portfolio {
+    font-size: 90px;
+  }
 
-@media (max-width: 480px) {
-    .portfolio {
-        font-size: 60px; /* Adjust size for mobile screens */
-    }
-}
-
-@media (max-width: 375px) {
-    .portfolio {
-        font-size: 45px; /* Adjust size for very small screens */
-    }
-}
-
-/* Buttons container */
-.buttons-container {
-    width: 85%;
-    display: flex;
-    margin: auto;
-    justify-content: space-between; /* Space buttons on both sides */
-    padding: 20px 0;
-    margin-top: 20px;
-    height: 85px;
-    align-items: center;
-    /* background-color: aqua; */
-}
-
-/* Button styles */
-/* General Styles for Read More Button */
-.read-more {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
-    border-radius: 5px;
-    padding: 0px 8px 0px 9px;
-    font-weight: 600;
-    margin-bottom: 80px;
-    position: relative;
-    color: white;
-    width: auto;
-    font-size: 20px;
-    height: 45px;
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-  }
-  .read-more a{
-    text-decoration: none;
-    color: white;
-  }
-  
-  /* Arrow for Read More Button */
-  .readarrow {
-    margin-left: 10px; /* Space between text and arrow */
-  }
-  
-  .readarrow img {
-    display: inline-block;
-    transform: rotate(224deg); /* Initial arrow rotation */
-    width: 19px;
-    height: auto;
-    filter: invert(1); /* Makes the arrow white */
-    vertical-align: middle; /* Aligns arrow with text */
-    transition: transform 0.3s ease; /* Smooth transition for rotation */
-  }
-  
-  /* Hover effect for Read More button */
-  .read-more:hover {
-    font-size: 21px;
-    cursor: pointer;
-  }
-  
-  .read-more:hover .readarrow img {
-    transform: rotate(90deg); /* Rotate arrow */
-  }
-  
-  /* General Styles for Project Button */
+  .read-more,
   .project-button {
-    display: block; /* Ensures the text and arrow are aligned */
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
-    border-radius: 5px;
-    padding: 0px 8px 0px 9px;
-    font-weight: 600;
-    position: relative;
-    color: white;
-    width: auto;
-    font-size: 20px;
-    margin-right: 80px;
-    height: 45px;
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-    border: none;
-    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
   }
-  
-  /* Arrow for Project Button */
-  .projectarrow {
-    margin-left: 10px; /* Space between text and arrow */
-  }
-  
+
+  .readarrow img,
   .projectarrow img {
-    display: inline-block;
-    transform: rotate(-45deg);
-    width: 19px;
-    height: auto;
-    filter: invert(1); /* Keeps the arrow white */
-    margin-left: 48px;
-    vertical-align: middle;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    width: 16px;
   }
-  
-  /* Hover effect for Project button */
-  .project-button:hover {
-    font-size: 22px; /* Increase font size */
-    width: auto; /* Ensure the button adjusts automatically */
-    height: 50px; /* Increase button height */
-    background: linear-gradient(to right, #1f2667, #1595b6); /* Change gradient direction */
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4); /* Add a shadow for depth */
+}
+
+@media (max-width: 690px) {
+  .portfolio {
+    font-size: 70px;
   }
-  
-  .project-button:hover + .projectarrow img {
-    transform: rotate(-45deg) translateY(20px);
-    margin-left: 38px; /* Moves arrow slightly downward */
+
+  .read-more,
+  .project-button {
+    font-size: 16px;
+    height: 36px;
+    padding: 0 8px;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    /* Adjust for tablet screens */
-    .read-more, .project-button {
-      font-size: 18px;
-      height: 40px;
-      padding: 0px 6px;
-    }
-  
-    .readarrow img, .projectarrow img {
-      width: 16px;
-      margin-left: 5px;
-    }
+
+  .readarrow img,
+  .projectarrow img {
+    width: 14px;
   }
-  
-  @media (max-width: 480px) {
-    /* Adjust for mobile screens */
-    .read-more, .project-button {
-      font-size: 16px;
-      height: 36px;
-      padding: 0px 4px;
-      text-align: center;
-    }
-  
-    .readarrow img, .projectarrow img {
-      width: 14px;
-      margin-left: 3px;
-    }
+}
+
+@media (max-width: 588px) {
+  .devel{
+    display: none;
   }
-  
-  
-  .resume-download {
-    background-color: #2196F3;
-    color: white;
-    right: 10px;
+  .per{
+    display: none;
   }
-  
-  button:hover {
-    opacity: 0.8;
+  .devimg img{
+    width: 200px;
+    
   }
-  
+ 
+}
+
+@media (max-width: 469px) {
+
+.read-more,
+.project-button {
+  font-size: 13px;
+  height: 36px;
+  padding: 0 8px;
+}
+
+.readarrow img,
+.projectarrow img {
+  width: 13px;
+}
+}

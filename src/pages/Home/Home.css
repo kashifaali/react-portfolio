@@ -1,0 +1,264 @@
+.container {
+    background-color: #0B0826;
+    width: 100%;
+    height: 100vh;
+}
+
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     
+  }
+
+.home {
+    width: 100%;
+}
+
+.home-main {
+    margin-top: 10px;
+    width: 100%;    
+    height: 340px;
+    /* background-color: aqua; */
+    /* Center content with Flexbox */
+    display: flex; /* Enable Flexbox */
+    justify-content:center;
+    align-items: center; /* Center vertically */
+}
+
+.portfolio {
+    font-size: 150px; /* Default size for large screens */
+    font-weight: bold; /* Make it bold */
+    color: white;
+    font-family:cursive;
+    text-align: center; /* Ensures proper alignment */
+    word-wrap: break-word; /* Prevents overflow */
+}
+.devimg img{
+  width: 135px;
+
+}
+
+.navbar-icons {
+  position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 27px 0px 23px 14px;
+
+}
+
+.navbar-icons a {
+  color: white;
+  padding-right: 5px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-icons a:hover {
+  color: orange; /* Change hover color */
+  font-size: 1.6rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-icons {
+    right: 10px; /* Adjust position for smaller screens */
+    gap: 15px; /* Reduce spacing between icons */
+  }
+
+  .navbar-icons a {
+    font-size: 1.2rem; /* Adjust icon size for smaller screens */
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        background-color: #0B0826;
+        width: 100%;
+        height: 140vh;
+    }
+    
+    .portfolio {
+        font-size: 140px; /* Adjust size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        font-size: 100px; /* Adjust size for smaller tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio {
+        font-size: 60px; /* Adjust size for mobile screens */
+    }
+}
+
+@media (max-width: 375px) {
+    .portfolio {
+        font-size: 45px; /* Adjust size for very small screens */
+    }
+}
+
+/* Buttons container */
+.buttons-container {
+    width: 85%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between; /* Space buttons on both sides */
+    padding: 20px 0;
+    margin-top: 20px;
+    height: 85px;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+/* Button styles */
+/* General Styles for Read More Button */
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
+    border-radius: 5px;
+    padding: 0px 8px 0px 9px;
+    font-weight: 600;
+    margin-bottom: 80px;
+    position: relative;
+    color: white;
+    width: auto;
+    font-size: 20px;
+    height: 45px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  .read-more a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Arrow for Read More Button */
+  .readarrow {
+    margin-left: 10px; /* Space between text and arrow */
+  }
+  
+  .readarrow img {
+    display: inline-block;
+    transform: rotate(224deg); /* Initial arrow rotation */
+    width: 19px;
+    height: auto;
+    filter: invert(1); /* Makes the arrow white */
+    vertical-align: middle; /* Aligns arrow with text */
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+  }
+  
+  /* Hover effect for Read More button */
+  .read-more:hover {
+    font-size: 21px;
+    cursor: pointer;
+  }
+  
+  .read-more:hover .readarrow img {
+    transform: rotate(90deg); /* Rotate arrow */
+  }
+  
+  /* General Styles for Project Button */
+  .project-button {
+    display: block; /* Ensures the text and arrow are aligned */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
+    border-radius: 5px;
+    padding: 0px 8px 0px 9px;
+    font-weight: 600;
+    position: relative;
+    color: white;
+    width: auto;
+    font-size: 20px;
+    margin-right: 80px;
+    height: 45px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Arrow for Project Button */
+  .projectarrow {
+    margin-left: 10px; /* Space between text and arrow */
+  }
+  
+  .projectarrow img {
+    display: inline-block;
+    transform: rotate(-45deg);
+    width: 19px;
+    height: auto;
+    filter: invert(1); /* Keeps the arrow white */
+    margin-left: 48px;
+    vertical-align: middle;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover effect for Project button */
+  .project-button:hover {
+    font-size: 22px; /* Increase font size */
+    width: auto; /* Ensure the button adjusts automatically */
+    height: 50px; /* Increase button height */
+    background: linear-gradient(to right, #1f2667, #1595b6); /* Change gradient direction */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4); /* Add a shadow for depth */
+  }
+  
+  .project-button:hover + .projectarrow img {
+    transform: rotate(-45deg) translateY(20px);
+    margin-left: 38px; /* Moves arrow slightly downward */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Adjust for tablet screens */
+    .read-more, .project-button {
+      font-size: 18px;
+      height: 40px;
+      padding: 0px 6px;
+    }
+  
+    .readarrow img, .projectarrow img {
+      width: 16px;
+      margin-left: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust for mobile screens */
+    .read-more, .project-button {
+      font-size: 16px;
+      height: 36px;
+      padding: 0px 4px;
+      text-align: center;
+    }
+  
+    .readarrow img, .projectarrow img {
+      width: 14px;
+      margin-left: 3px;
+    }
+  }
+  
+  
+  .resume-download {
+    background-color: #2196F3;
+    color: white;
+    right: 10px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  

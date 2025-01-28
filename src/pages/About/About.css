@@ -1,0 +1,129 @@
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #111;
+  color: #fff;
+}
+
+.about-left {
+  width: 50%;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tag {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.mern-heading {
+  font-size: 2rem;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.mern-logos {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.logo-container {
+  position: relative;
+  text-align: center;
+}
+
+.mern-logo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.mern-logo:hover {
+  transform: scale(1.2);
+}
+
+.logo-text {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 8px;
+  display: block;
+  text-align: center;
+}
+
+.logo-tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  white-space: nowrap;
+  display: none;
+  font-weight: bold;
+}
+
+.logo-container:hover .logo-tooltip {
+  display: block;
+}
+
+.logo-container:hover .logo-tooltip {
+  background-color: currentColor; /* This dynamically picks the color set in the logo-text */
+}
+
+
+.about-right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .about-left,
+  .about-right {
+      width: 100%;
+  }
+
+  .about-image {
+      margin-top: 20px;
+  }
+}

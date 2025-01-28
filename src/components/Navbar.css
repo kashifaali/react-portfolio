@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  height: 80px;
+  padding-top: 15px;
+
+}
+
+.L {
+  font-size: 6.5rem;
+  font-weight: bold;
+  margin-left: 80px;
+  color: orange;
+  margin-right: 3px;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left:0;
+  /* text-decoration: none; */
+  color: white;
+}
+
+.navbar-logo a {
+  text-decoration: none; /* Remove underlinfor the anchor tag */
+  color: white; /* Ensure the logo's color remains consistent */
+}
+
+/* .navbar-icons {
+  display: flex;
+  gap: 40px;
+  margin-right: 100px;
+}
+
+.navbar-icons a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-icons a:hover {
+  color: orange; /* Change hover color as needed */
+
+
+/* Responsive Design */
+@media (max-width: 718px) {
+  .navbar {
+    justify-content: space-between;
+    gap: 5; /* Center logo on small screens */
+  }
+
+  .navbar-logo {
+    margin-left: 10px; /* Remove left margin for centered alignment */
+  }
+  .navbar-icons{
+    display: flex;
+    gap: 20px;
+  }
+
+ 
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: center; /* Center logo on small screens */
+  }
+
+  .navbar-logo {
+    margin: 0; /* Remove left margin for centered alignment */
+  }
+
+  .navbar-icons {
+    display: none; /* Hide social media icons */
+  }
+}

@@ -43,7 +43,7 @@ export default function Home() {
             <InfiniteSlider />
           </div>
 
-          {/* Buttons */}
+        
           <div className="buttons-container">
             <div className="read-button">
               <Link to="/about">

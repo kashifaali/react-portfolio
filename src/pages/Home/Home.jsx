@@ -1,27 +1,28 @@
-import React from 'react';
-import Navbar from '../../components/Navbar';
-import InfiniteSlider from '../../components/InfiniteSlider.jsx';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import './Home.css';
-import Homeimage from '../../assets/image.png';
-import ParticlesComponent from '../Particle/particle.jsx'; // Import ParticlesComponent
+import React from "react";
+import { Link } from "react-router-dom";
+import Navbar from "../../components/Navbar";
+import InfiniteSlider from "../../components/InfiniteSlider.jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import "./Home.css";
+import Homeimage from "../../assets/kashif.png";
+import ParticlesComponent from "../Particle/particle.jsx"; 
 
 export default function Home() {
   return (
     <>
       <div className="container">
         <Navbar />
-        <ParticlesComponent id="tsparticles" /> {/* Add the particle component here */}
+        <ParticlesComponent id="tsparticles" /> 
 
         <div className="home">
           <div className="home-main">
             <div className="portfolio">
-              <span className='devel'>DEVEL</span>
+              <span className="devel">DEVEL</span>
               <span className="devimg">
                 <img src={Homeimage} alt="Developer Logo" />
               </span>
-              <span className='per'>PER</span>
+              <span className="per">PER</span>
             </div>
             <div className="navbar-icons">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -38,19 +39,21 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className='infinite'>
-            <InfiniteSlider/>
+          <div className="infinite">
+            <InfiniteSlider />
           </div>
 
           {/* Buttons */}
           <div className="buttons-container">
             <div className="read-button">
-              <button className="read-more">
-                <a href="#about">About Me</a>
-                <span className="readarrow">
-                  <img src="/arrow.svg" alt="arrow" />
-                </span>
-              </button>
+              <Link to="/about">
+                <button className="read-more">
+                  About Me
+                  <span className="readarrow">
+                    <img src="/arrow.svg" alt="arrow" />
+                  </span>
+                </button>
+              </Link>
             </div>
             <div className="Project-div">
               <button className="project-button">

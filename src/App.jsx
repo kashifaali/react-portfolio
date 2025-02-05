@@ -1,16 +1,18 @@
-import './App.css'
-import Home from './pages/Home/Home.jsx'
-import About from './pages/About/About.jsx'
-import InfiniteSlider from './components/InfiniteSlider.jsx'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./pages/Home/Home.jsx";
+import About from "./pages/About/About.jsx";
 
 function App() {
   return (
-    <>
-      <Home/>
-      {/* <About/> */}
-      {/* <InfiniteSlider/> */}
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

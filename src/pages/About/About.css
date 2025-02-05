@@ -1,3 +1,5 @@
+
+
 .about-container {
   display: flex;
   justify-content: space-between;
@@ -5,6 +7,10 @@
   padding: 40px;
   background-color: #111;
   color: #fff;
+  margin-top: 30px;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
 }
 
 .about-left {
@@ -104,12 +110,24 @@
   width: 40%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+
+  /* background-color: #00bcd4; */
+}
+
+.image{
+  height: 80%;
 }
 
 .about-image {
   width: 100%;
   max-width: 400px;
   object-fit: contain;
+}
+
+.resumebutton{
+  height: 20%;
+  /* background-color: #333; */
 }
 
 @media screen and (max-width: 768px) {
@@ -124,6 +142,54 @@
   }
 
   .about-image {
-      margin-top: 20px;
+      margin-top: 0px;
   }
 }
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 90px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.resume-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
+  border-radius: 5px;
+  padding: 0 10px;
+  font-weight: 600;
+  margin-top: 50px;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  height: 45px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+}
+
+.resumearrow img {
+  margin-left: 10px;
+  transform: rotate(224deg);
+  width: 19px;
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+.resume-more:hover .resumearrow img {
+  transform: rotate(314deg);
+}
+

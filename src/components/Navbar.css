@@ -12,21 +12,29 @@
 
 }
 
-.L {
-  font-size: 6.5rem;
-  font-weight: bold;
+.navbar-logo{
+  /* background-color: antiquewhite; */
+  position: relative;
+
+}
+
+.L img{
+  /* font-size: 6.5rem; */
+  width: 105px;
+
   margin-left: 80px;
-  color: orange;
   margin-right: 3px;
 }
 
-.navbar-logo {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-left:0;
-  /* text-decoration: none; */
-  color: white;
+.logo-name{
+  font-size: 42px;
+  position: absolute;
+  top: 15px;
+  left: 163px;
+
 }
+
+
 
 .navbar-logo a {
   text-decoration: none; /* Remove underlinfor the anchor tag */
@@ -73,11 +81,28 @@
     justify-content: center; /* Center logo on small screens */
   }
 
-  .navbar-logo {
-    margin: 0; /* Remove left margin for centered alignment */
-  }
 
-  .navbar-icons {
-    display: none; /* Hide social media icons */
+
+  .navbar-logo{
+    /* background-color: antiquewhite; */
+    position: relative;
+  
+  }
+  
+  .L img{
+    width: 105px;
+    margin-left: 0;
+    right: 31px;
+    top: -44px;
+    position: absolute;
+    margin-right: 0;
+  }
+  
+  .logo-name{
+      font-size: 42px;
+      position: absolute;
+      top: -31px;
+      left: -48px;
+  
   }
 }

@@ -23,6 +23,9 @@ body {
   background: white;
   white-space: nowrap;
   position: relative;
+  height: 100px; /* Ensure fixed height */
+  display: flex;
+  align-items: center;
 }
 
 .logos:before,
@@ -50,7 +53,9 @@ body {
 }
 
 .logos-slide {
-  display: inline-block;
+  display: flex; /* Change from inline-block to flex */
+  align-items: center;
+  gap: 40px; /* Adjust spacing between images */
   animation: 35s slide infinite linear;
 }
 

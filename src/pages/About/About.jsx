@@ -20,12 +20,12 @@ const About = () => {
 
     return (
         <motion.div 
-            className="about-container"
-            initial={{ x: "-100vw" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100vw" }}
-            transition={{ type: "tween", duration: 0.6 }}
-        >
+        className="about-container"
+        initial={{ y: "-100vh" }}  // Start from top
+        animate={{ y: 0 }}        // Move to original position
+        exit={{ y: "100vh" }}     // Exit to bottom
+        transition={{ type: "tween", duration: 0.9 }}
+    >
             {/* Close Button */}
             <button className="close-btn" onClick={() => navigate("/")}>
                 <FaTimes />

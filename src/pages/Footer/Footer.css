@@ -1,0 +1,13 @@
+.footer-link{
+    border: none;
+    /* background-color: antiquewhite; */
+    
+}
+
+.footer-link a{
+    color: #1788AE;
+}
+
+.footernav{
+    margin-bottom: 10px;
+}

@@ -2,15 +2,18 @@ import React from "react";
 import Navbar from "../../components/Navbar.jsx";
 import InfiniteSlider from "../../components/InfiniteSlider.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTwitter, faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Homeimage from "../../assets/kashif.png";
 import ParticlesComponent from "../Particle/particle.jsx";
+import Project from "../Projects/Project.jsx";
+import Footer from "../Footer/Footer.jsx";
 import "./Home.css";
 
 
 export default function Home() {
   return (
-    <div className="bg-[#0B0826] w-full h-screen">
+    <>
+<div className="bg-[#0B0826] w-full h-screen">
       <Navbar />
       {/* <ParticlesComponent id="tsparticles" className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none" /> */}
       
@@ -26,8 +29,8 @@ export default function Home() {
         </div>
         
         <div className="fixed top-64 right-5 transform -translate-y-1/2 flex flex-col gap-7 text-white text-2xl">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-transform hover:scale-110">
-            <FontAwesomeIcon icon={faFacebook} />
+          <a href="https://github.com/kashifaali" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-transform hover:scale-110">
+            <FontAwesomeIcon icon={faGithub} />
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-transform hover:scale-110">
             <FontAwesomeIcon icon={faTwitter} />
@@ -35,7 +38,7 @@ export default function Home() {
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-transform hover:scale-110">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-transform hover:scale-110">
+          <a href="https://www.linkedin.com/in/thekashifali/" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-transform hover:scale-110">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </div>
@@ -59,5 +62,11 @@ export default function Home() {
         </div>
       </div>
     </div>
+
+<Project/>
+
+<Footer/>
+    </>
+    
   );
 }

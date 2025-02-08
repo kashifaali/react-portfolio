@@ -20,7 +20,7 @@ const About = () => {
 
     return (
         <motion.div 
-        className="about-container"
+        className="about-container "
         initial={{ y: "-100vh" }}  // Start from top
         animate={{ y: 0 }}        // Move to original position
         exit={{ y: "100vh" }}     // Exit to bottom
@@ -32,24 +32,23 @@ const About = () => {
             </button>
 
             {/* Left Side */}
-            <div className="about-left">
+            <div className="about-left ">
                 <h1 className="about-heading">ABOUT ME</h1>
                 <p className="about-description">
-                    I help business owners and busy web developers to design & develop
+                Hi, I'm Kashif Ali, a MERN Stack Developer passionate about building scalable and user-friendly web applications. 🚀
                 </p>
                 <div className="about-tags">
                     {[
                         "#javascript", "#react.js", "#redux", "#node.js", "#express.js",
-                        "#mongoDB", "#mongoose", "#cloudinary", "#ejs", "#html", "#css",
-                        "#sass", "#bootstrap", "#tailwind", "#git", "#github", "#aws",
-                        "#terminal", "#adobeXD", "#figma"
+                        "#mongoDB", "#mongoose","#html", "#css",
+                        "#bootstrap", "#tailwind", "#git", "#github", "restAPI"
                     ].map((tag, index) => (
                         <span key={index} className="tag">
                             {tag}
                         </span>
                     ))}
                 </div>
-                <h2 className="mern-heading">MERN STACK</h2>
+                <h3 className="mern-heading">MERN STACK</h3>
                 <div className="mern-logos">
                     {[
                         { src: "/mongodb.svg", name: "MongoDB", text: "M", color: "#4CAF50" },

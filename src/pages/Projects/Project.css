@@ -1,0 +1,64 @@
+/* *{
+    font-family: "Nunito", sans-serif;
+} */
+
+ul li{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+  /* background-color: #333; */
+  color: black;
+  border: 1px black solid;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+
+h2 {
+    text-align: center;
+    width: max-content;
+    font-size: 2.5em;
+    background-color: var(--light);
+    position: relative;
+    z-index: 5;
+    color: rgb(23, 136, 174);
+    margin: 0px auto;
+    padding: 0.2em 0.5em;
+    border-width: 2px 2px 2px;
+    border-style: none solid solid;
+    border-color: rgb(23, 136, 174) rgb(23, 136, 174) rgb(23, 136, 174);
+    border-image: initial;
+    border-top: none;
+    border-radius: 0px 0px 8px 8px;
+    background-color: #fff;
+}
+@media (min-width: 640px) { /* sm:border-b-2 */
+    h2 {
+      border-bottom: 2px solid #1788ae; /* border-[#1788ae] */
+    }
+  }
+
+
+  .div-container {
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    /* background-color: #fde68a;  */
+    margin-top: 1px; /* mt-8 */
+    align-items: center; /* items-center */
+    position: relative; /* relative */
+    width: 96%;
+    margin: 45px auto;
+}
+
+/* Apply styles for sm screens */
+@media (min-width: 640px) { /* sm breakpoint */
+    .div-container {
+        flex-direction: row; /* sm:flex-row */
+        gap: 80px; /* sm:gap-[80px] */
+        margin-top: 3rem; /* sm:mt-20 */
+    }
+}
+
+  

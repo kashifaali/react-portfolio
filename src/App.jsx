@@ -7,9 +7,9 @@ import About from "./pages/About/About.jsx";
 function App() {
   return (
     <>
-    <Router>
+    <Router basename="/react-portfolio">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/react-portfolio" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </Router>
